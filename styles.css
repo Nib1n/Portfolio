@@ -1,0 +1,276 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 5%;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background with slight transparency */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: shadow to separate header from content */
+}
+
+header .logo {
+    font-size: 2.5rem;
+    color: #b74b4b; /* Ensure logo color contrasts well with dark background */
+    font-weight: 700;
+}
+
+
+nav a {
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 2rem;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #b74b4b;
+    border-bottom: 3px solid #b74b4b;
+}
+
+.hamburger-menu {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.typing-text {
+    display: inline-block;
+    font-weight: bold;
+    color: #ff4d4d; /* Example color */
+    /* Additional styling here */
+}
+
+section {
+    padding: 5rem 5%;
+    min-height: 100vh;
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    text-align: center;
+}
+
+.home-content h1 {
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+.home-content h3 {
+    font-size: 3rem;
+}
+
+.home-img img {
+    width: 20vw;
+    max-width: 250px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #b74b4b;
+}
+
+/* Skills Section */
+/* Skills Section Styling */
+/* Skills Section Styling */
+.skills {
+    padding: 40px;
+    text-align: center;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+
+.skills h2 {
+    font-size: 2.5em;
+    color: #ff4d4d;
+    margin-bottom: 30px;
+}
+
+.skills-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.skill-item {
+    background-color: #1a1a1a;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.skill-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #ff4d4d;
+}
+
+/* Progress Bar Container Styling */
+.progress-bar-container {
+    background-color: #333;
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+/* Progress Bar Styling */
+.progress-bar {
+    background-color: #ffffff;
+    height: 100%;
+    border-radius: 5px 0 0 5px;
+    width: 0;
+    transition: width 0.8s ease-in-out;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills h2 {
+        font-size: 2em;
+    }
+    .skill-item h3 {
+        font-size: 1.2em;
+    }
+}
+
+/* resume section */
+.resume-container {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.resume-image {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #b74b4b;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    padding: 50px;  /* Increased padding for a more spacious contact section */
+    background-color: #f9f9f9;  /* Light background for contrast */
+    margin-top: 40px;  /* Increased margin to give space from the top */
+    border-radius: 8px;  /* Rounded corners for the entire section */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Subtle shadow to elevate the contact section */
+}
+
+.contact h2 {
+    font-size: 3em;  /* Increased font size for the heading */
+    color: #333;  /* Dark color for heading text */
+    margin-bottom: 30px;  /* Increased space below the heading */
+}
+
+.contact-info {
+    background-color: #333;  /* Dark background for contact details */
+    color: #fff;  /* White text to contrast with the dark background */
+    padding: 40px;  /* Increased padding for more spacious details */
+    border-radius: 5px;
+    text-align: left;  /* Align text to the left for better readability */
+    margin-top: 20px;
+    width: 80%;  /* Limit the width to make it more contained */
+    margin-left: auto;
+    margin-right: auto;  /* Center the contact info container */
+}
+
+.contact-info p {
+    font-size: 1.5em;  /* Increased font size for readability */
+    margin: 15px 0;  /* More space between contact info lines */
+}
+
+.contact-info strong {
+    font-weight: bold;  /* Make the labels (Phone, Email) stand out */
+}
+
+.contact-detail {
+    font-weight: normal;  /* Normal weight for contact details */
+}
+
+.social-icons {
+    margin-top: 40px;  /* Space above the social icons */
+    display: flex;
+    justify-content: center;
+    gap: 30px;  /* Increased space between icons */
+}
+
+.social-icons a {
+    color: #fff;  /* White color for the icons */
+    font-size: 2.5em;  /* Increased icon size */
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #b74b4b;  /* Change to the button color on hover */
+}
+
+/* Button */
+.btn {
+    padding: 1.5rem 3rem;  /* Increased padding for a larger button */
+    background-color: #b74b4b;
+    color: white;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: 0.3s;
+    display: inline-block;  /* Display the button inline */
+    margin-top: 30px;  /* Space above the button */
+    font-size: 1.5em;  /* Increased font size for better visibility */
+}
+
+.btn:hover {
+    background-color: black;
+    color: #b74b4b;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #161616;
+        width: 50%;
+        border-left: 3px solid #b74b4b;
+        border-radius: 10px 0 0 10px;
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    nav a {
+        font-size: 2rem;
+        padding: 1rem;
+        text-align: center;
+    }
+}
